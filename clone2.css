@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background: #f0f8ff;
+    --text: #212529;
+}
+.left{
+    background-color: #f0f8ff;
+    color: #212529;
+    height: 1400px;
+    width: 100%;
+    list-style: none;
+    transition: 0.3s;
+    z-index: -1;
+    background-color: var(--background);
+    color: var(--text);
+    transition: background-color 0.3s, color 0.3s;
+}
+.left .top{
+    padding-left: 250px;
+    padding-top: 20px;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.4s ease;
+}
+.left .top:hover{
+    color: rgb(161, 161, 161);
+    cursor: pointer;
+    padding-left: 230px;
+}
+.left .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left .main .content{
+    display: block;
+    padding-left: 230px;
+    padding-top: 40px;
+}
+.left .main .content h1{
+    font-size: 39px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.2s ease;
+    margin-bottom: 40px;
+    position: absolute;
+}
+.left .main .content h1:hover{
+    font-size: 41px;
+    cursor: pointer;
+}
+.left .main .content p{
+    font-size: 17px;
+    padding-top: 140px;
+    padding-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.left .main .content span{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+.left .main .content span:hover{
+    color: rgb(160, 158, 158);
+    cursor: pointer;
+}
+.left .main .content .pointer{
+    padding-left: 20px;
+    cursor: pointer;
+}
+.left .main .images{
+    position: absolute;
+    text-align: center;
+    margin-left: 700px;
+    margin-top: 60px;
+}
+.left .main .images .img{
+    height: 20rem;
+    width: 27.2rem;
+    padding-bottom: 55px;
+    transition: 1.2s ease;
+}
+.left .main .images .img:hover{
+    transform: scaleX(-1);
+}
+.left label{
+    width: 150px;
+    height: 50px;
+    margin-left: 225px;
+    margin-top: 50px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+.left label:after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(180deg, #ffcc89,#d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+.left input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.left input:checked + label{
+    background: #242424;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + label {
+    background-color: #2ecc71;
+}
+.left input:checked + label:after{
+    left: 145px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777,#3a3a3a);
+}
+.left label, label::after{
+    transition: 0.3s;
+}
+.left label:active:after{
+    width: 60px;
+}
+.left input:checked + label + .left{
+    background-color: #242424;
+    color: #f0f8ff;
+}
+.left label svg{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    z-index: 100;
+}
+.left label svg.sun{
+    left: 10px;
+    top: 10px;
+    fill: #fff;
+    transition: 0.3s;
+}
+.left label svg.moon{
+    left: 113px;
+    top: 10px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+}
+.left input:checked + label svg.sun{
+    fill: #f4ed5f;
+}
+.left input:checked + label svg.moon{
+    fill: #fff;
+}
+
+
+@media screen and (max-width: 770px){
+    .left .top{
+        padding-left: 160px;
+    }
+    .left .top:hover{
+        padding-left: 140px;
+    }
+    .left .main .content{
+        padding-left: 140px;
+        transition: 1s ease;
+    }
+    .left .main .content h1{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .left .main .content h1:hover{
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .left .main .content p{
+        font-size: 16px;
+        padding-top: 120px;
+        padding-bottom: 30px;
+    }
+    .left .main .content span{
+        font-size: 16px;
+    }
+    .left .main .images{
+        margin-left: 520px;
+    }
+    .left .main .images .img{
+        height: 19rem;
+        width: 25rem;
+        margin-right: 300px;
+    }
+    .left label{
+        margin-left: 130px;
+    }
+}
