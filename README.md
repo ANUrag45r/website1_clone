@@ -4,3 +4,6 @@ different stages of work
 
 **final project**
 ![WhatsApp Image 2024-03-03 at 20 00 00_932f1321](https://github.com/ANUrag45r/website1_clone/assets/161646966/33ad36fb-7443-40ee-a0fe-5c2d9f389556)
+with night mode
+![WhatsApp Image 2024-03-03 at 20 00 21_e57cf30d](https://github.com/ANUrag45r/website1_clone/assets/161646966/daea8a15-7835-4023-9ecd-67bfb7e12a93)
+
